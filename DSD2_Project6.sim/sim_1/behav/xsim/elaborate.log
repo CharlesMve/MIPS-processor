@@ -1,0 +1,40 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a7486082ff334885a61be1d7aacb02d1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.instruction_mem [instruction_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_fetch [instruction_fetch_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_decode [instruction_decode_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ripple_carry [ripple_carry_default]
+Compiling architecture behavioral of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture dataflow of entity xil_defaultlib.notN [notn_default]
+Compiling architecture behavioral of entity xil_defaultlib.sllN [slln_default]
+Compiling architecture behavioral of entity xil_defaultlib.srlN [srln_default]
+Compiling architecture behavioral of entity xil_defaultlib.sraN [sran_default]
+Compiling architecture behavioral of entity xil_defaultlib.log_and [log_and_default]
+Compiling architecture behavioral of entity xil_defaultlib.log_or [log_or_default]
+Compiling architecture behavioral of entity xil_defaultlib.log_xor [log_xor_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu4 [alu4_default]
+Compiling architecture behavioral of entity xil_defaultlib.execute_stage [execute_stage_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [data_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.BCDSevenSegConverter [bcdsevensegconverter_default]
+Compiling architecture behavioral of entity xil_defaultlib.SevenSegController [sevensegcontroller_default]
+Compiling architecture behavioral of entity xil_defaultlib.memory_stage [memory_stage_default]
+Compiling architecture behavioral of entity xil_defaultlib.writeback_stage [writeback_stage_default]
+Compiling architecture behavioral of entity xil_defaultlib.micro_processor [micro_processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.microprocessor_tb
+Built simulation snapshot microprocessor_tb_behav

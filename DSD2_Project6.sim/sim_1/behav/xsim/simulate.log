@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: Error: ALUResult is UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU Expected: 00211020
+Time: 5 ns  Iteration: 0  Process: /microprocessor_tb/stim_proc  File: C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sim_1/new/microprocessor_tb.vhd
