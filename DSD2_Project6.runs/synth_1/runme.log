@@ -1,0 +1,582 @@
+
+*** Running vivado
+    with args -log micro_procHW.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_procHW.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source micro_procHW.tcl -notrace
+Command: synth_design -top micro_procHW -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25240 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 725.309 ; gain = 176.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'micro_procHW' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/new/micro_procHW.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'instruction_fetch' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_fetch.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'instruction_mem' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_mem.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'instruction_mem' (1#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_mem.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'instruction_fetch' (2#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_fetch.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'instruction_decode' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/instruction_decode.vhd:32]
+	Parameter BIT_WIDTH bound to: 32 - type: integer 
+	Parameter LOG_PORT_DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/Control_Unit.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (3#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/Control_Unit.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/reg_file.vhd:27]
+	Parameter BIT_WIDTH bound to: 32 - type: integer 
+	Parameter LOG_PORT_DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (4#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/reg_file.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'instruction_decode' (5#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/instruction_decode.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'execute_stage' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/execute_stage.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/alu4.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ripple_carry' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/ripple_carry.vhd:17]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/full_adder.vhd:18]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (6#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/full_adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry' (7#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/ripple_carry.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/multiplier.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (8#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/multiplier.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'notN' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/notN.vhd:22]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'notN' (9#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/notN.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sllN.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sllN' (10#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sllN.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/srlN.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlN' (11#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/srlN.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'sraN' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sraN.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sraN' (12#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sraN.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'log_and' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_and.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'log_and' (13#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_and.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'log_or' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_or.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'log_or' (14#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_or.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'log_xor' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_xor.vhd:45]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'log_xor' (15#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_xor.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'alu4' (16#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/alu4.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'execute_stage' (17#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/execute_stage.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'memory_stage' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/memory_stage.vhd:31]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_SPACE bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/data_memory.vhd:21]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_SPACE bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (18#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/data_memory.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'SevenSegController' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/seven_seg_controller.vhd:28]
+INFO: [Synth 8-3491] module 'BCDSevenSegConverter' declared at 'C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd:6' bound to instance 'BCDSevenSegConverter_0' of component 'BCDSevenSegConverter' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/seven_seg_controller.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BCDSevenSegConverter' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BCDSevenSegConverter' (19#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegController' (20#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/seven_seg_controller.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'memory_stage' (21#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/memory_stage.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'writeback_stage' [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/writeback_stage.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'writeback_stage' (22#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/writeback_stage.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'micro_procHW' (23#1) [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.srcs/sources_1/new/micro_procHW.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 792.238 ; gain = 243.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 795.621 ; gain = 246.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 795.621 ; gain = 246.801
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/MemoryStageHW.xdc]
+Finished Parsing XDC File [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/MemoryStageHW.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/MemoryStageHW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/micro_procHW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/micro_procHW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 924.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 924.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 304   
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module micro_procHW 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
+Module instruction_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module reg_file 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module ripple_carry 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module log_xor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module execute_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module data_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SevenSegController 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module writeback_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "decodestage/control_unit/ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3971] The signal "micro_procHW/decodestage/reg_file/registerArray_sig_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[10]' (FD) to 'Instruction_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[16]' (FD) to 'Instruction_reg_rep_bsel[16]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[12]' (FD) to 'Instruction_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[17]' (FD) to 'Instruction_reg_rep_bsel[17]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[18]' (FD) to 'Instruction_reg_rep_bsel[18]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[23]' (FD) to 'Instruction_reg_rep_bsel[18]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[19]' (FD) to 'Instruction_reg_rep_bsel[19]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[20]' (FD) to 'Instruction_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[22]' (FD) to 'Instruction_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[15]' (FD) to 'SignImm_ex_reg[10]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[14]' (FD) to 'SignImm_ex_reg[12]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[13]' (FD) to 'RdDest_ex_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[12]' (FD) to 'RdDest_ex_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[11]' (FD) to 'RdDest_ex_reg[0]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[10]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RdDest_ex_reg[1]' (FD) to 'RdDest_ex_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\fetchstage/addrS_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\fetchstage/addrS_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[7]' (FD) to 'Instruction_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[6]' (FD) to 'Instruction_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[18]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[20]' (FD) to 'Instruction_reg_rep_bsel[22]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[21]' (FD) to 'Instruction_reg_rep_bsel[21]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[24]' (FD) to 'Instruction_reg_rep_bsel[24]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[25]' (FD) to 'Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[30]' (FD) to 'Instruction_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[31]' (FD) to 'Instruction_reg[26]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[7]' (FD) to 'SignImm_ex_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[6]' (FD) to 'SignImm_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[11]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[13]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[14]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[15]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'RdDest_ex_reg[0]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RdDest_ex_reg[2]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RtDest_ex_reg[2]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RdDest_ex_reg[3]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[9]' (FD) to 'Instruction_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[17]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[22]' (FD) to 'Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[23]' (FD) to 'Instruction_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[24]' (FD) to 'Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Instruction_reg[28] )
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[9]' (FD) to 'SignImm_ex_reg[8]'
+INFO: [Synth 8-3886] merging instance 'RtDest_ex_reg[1]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[28]' (FD) to 'RdDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RdDest_ex_reg[4]' (FD) to 'RtDest_ex_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RtDest_ex_reg[4] )
+INFO: [Synth 8-3886] merging instance 'WriteReg_mem_reg[2]' (FD) to 'RtDest_ex_reg[4]'
+INFO: [Synth 8-3886] merging instance 'WriteReg_mem_reg[1]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RtDest_ex_reg[4]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\WriteReg_mem_reg[4] )
+INFO: [Synth 8-3886] merging instance 'WriteReg_wr_reg[1]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'WriteReg_wr_reg[2]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'WriteReg_wr_reg[4]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RegWriteAddr_reg[1]' (FD) to 'RegWriteAddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RegWriteAddr_reg[2]' (FD) to 'RegWriteAddr_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\WriteReg_mem_reg[4] )
+INFO: [Synth 8-3886] merging instance 'RegWriteAddr_reg[4]' (FD) to 'WriteReg_mem_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\WriteReg_mem_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fetchstage/addrS_reg_rep[1] )
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[3]' (FD) to 'Instruction_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[4]' (FD) to 'Instruction_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[5]' (FD) to 'SignImm_ex_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[4]' (FD) to 'SignImm_ex_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Instruction_reg_rep_bsel[25] )
+WARNING: [Synth 8-3332] Sequential element (Instruction_reg_rep_bsel[25]) is unused and will be removed from module micro_procHW.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|instruction_mem | p_0_out    | 1024x6        | LUT            | 
+|instruction_mem | p_0_out    | 1024x6        | LUT            | 
+|instruction_mem | p_0_out    | 1024x6        | LUT            | 
+|instruction_mem | p_0_out    | 1024x6        | LUT            | 
+|micro_procHW    | p_0_out    | 1024x6        | LUT            | 
+|micro_procHW    | p_0_out    | 1024x6        | LUT            | 
+|micro_procHW    | p_0_out    | 1024x6        | LUT            | 
+|micro_procHW    | p_0_out    | 1024x6        | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+|Module Name  | RTL Object                        | Inference | Size (Depth x Width) | Primitives        | 
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+|micro_procHW | memorystage/data_mem/mips_mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_1/decodestage/reg_file/registerArray_sig_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/decodestage/reg_file/registerArray_sig_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 924.832 ; gain = 376.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5584] The signal "micro_procHW/decodestage/reg_file/registerArray_sig_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal "micro_procHW/decodestage/reg_file/registerArray_sig_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1112.441 ; gain = 563.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+|Module Name  | RTL Object                        | Inference | Size (Depth x Width) | Primitives        | 
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+|micro_procHW | memorystage/data_mem/mips_mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++-------------+-----------------------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[16]' (FDR) to 'Instruction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg_rep_bsel[19]' (FDR) to 'Instruction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[8]' (FDR) to 'Instruction_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[5]' (FDR) to 'Instruction_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Instruction_reg[26]' (FDR) to 'Instruction_reg[27]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[8]' (FD) to 'SignImm_ex_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[3]' (FD) to 'SignImm_ex_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[1]' (FD) to 'RtDest_ex_reg[0]'
+INFO: [Synth 8-3886] merging instance 'SignImm_ex_reg[0]' (FD) to 'RtDest_ex_reg[3]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:46 . Memory (MB): peak = 1125.496 ; gain = 576.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|micro_procHW | RegWriteEn_reg      | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|micro_procHW | RegWriteAddr_reg[3] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|micro_procHW | MemtoReg_wr_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    15|
+|3     |LUT1      |     5|
+|4     |LUT2      |    37|
+|5     |LUT3      |    80|
+|6     |LUT4      |    74|
+|7     |LUT5      |   224|
+|8     |LUT6      |   697|
+|9     |RAM256X1S |   128|
+|10    |RAM32M    |    12|
+|11    |SRL16E    |     4|
+|12    |FDCE      |    54|
+|13    |FDRE      |   324|
+|14    |IBUF      |    18|
+|15    |OBUF      |    11|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------+------+
+|      |Instance         |Module             |Cells |
++------+-----------------+-------------------+------+
+|1     |top              |                   |  1684|
+|2     |  decodestage    |instruction_decode |    13|
+|3     |    reg_file     |reg_file           |    13|
+|4     |  executestage   |execute_stage      |   913|
+|5     |    aluN         |alu4               |   261|
+|6     |      sll_comp   |sllN               |   101|
+|7     |      sra_comp   |sraN               |    71|
+|8     |      srl_comp   |srlN               |    89|
+|9     |  fetchstage     |instruction_fetch  |    58|
+|10    |  memorystage    |memory_stage       |   276|
+|11    |    data_mem     |data_memory        |   246|
+|12    |    seven_seg    |SevenSegController |    30|
+|13    |  writebackstage |writeback_stage    |    32|
++------+-----------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1131.289 ; gain = 453.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1131.289 ; gain = 582.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 155 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 140 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1131.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+142 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:52 . Memory (MB): peak = 1131.289 ; gain = 832.445
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1131.289 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.runs/synth_1/micro_procHW.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file micro_procHW_utilization_synth.rpt -pb micro_procHW_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 17:25:50 2024...

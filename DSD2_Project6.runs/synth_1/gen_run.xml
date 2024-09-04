@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1713993894">
+  <File Type="PA-TCL" Name="micro_procHW.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="micro_procHW_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="micro_procHW_reports.tcl"/>
+  <File Type="RDS-RDS" Name="micro_procHW.vds"/>
+  <File Type="RDS-UTIL" Name="micro_procHW_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="micro_procHW_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="micro_procHW.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="micro_procHW_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="micro_procHW_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/Control_Unit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/Control_Unit.vhd"/>
+        <Attr Name="ImportTime" Val="1709930152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/new/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1711566073"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/ripple_carry.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/new/ripple_carry.vhd"/>
+        <Attr Name="ImportTime" Val="1711855905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/new/multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1711855918"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/notN.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/notN.vhd"/>
+        <Attr Name="ImportTime" Val="1711855958"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sllN.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sllN.vhd"/>
+        <Attr Name="ImportTime" Val="1711855960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/srlN.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/srlN.vhd"/>
+        <Attr Name="ImportTime" Val="1711855961"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sraN.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/sraN.vhd"/>
+        <Attr Name="ImportTime" Val="1711855956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_and.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_and.vhd"/>
+        <Attr Name="ImportTime" Val="1711855962"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_or.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_or.vhd"/>
+        <Attr Name="ImportTime" Val="1711855974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_xor.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/log_xor.vhd"/>
+        <Attr Name="ImportTime" Val="1711855980"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/alu4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/new/alu4.vhd"/>
+        <Attr Name="ImportTime" Val="1712091890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project5/bcd_seven_seg_converter.vhd"/>
+        <Attr Name="ImportTime" Val="1712089643"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/data_memory.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/data_memory.vhd"/>
+        <Attr Name="ImportTime" Val="1712245890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/new/execute_stage.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/new/execute_stage.vhd"/>
+        <Attr Name="ImportTime" Val="1711394911"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/reg_file.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project3_P2/reg_file.vhd"/>
+        <Attr Name="ImportTime" Val="1709825885"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/instruction_decode.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project3_P2/DSD2_Project3_P2.srcs/sources_1/new/instruction_decode.vhd"/>
+        <Attr Name="ImportTime" Val="1709931176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_mem.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_mem.vhd"/>
+        <Attr Name="ImportTime" Val="1709658504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_fetch.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project3/DSD2_Project3.srcs/sources_1/new/instruction_fetch.vhd"/>
+        <Attr Name="ImportTime" Val="1709657905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/seven_seg_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project5/seven_seg_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1712089634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/memory_stage.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/memory_stage.vhd"/>
+        <Attr Name="ImportTime" Val="1712174016"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/writeback_stage.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DSD2 Projects/DSD2_Project5/DSD2_Project5.srcs/sources_1/new/writeback_stage.vhd"/>
+        <Attr Name="ImportTime" Val="1712096458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/micro_procHW.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/micro_processor.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/DSD2 Hw/dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/global_pkg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dsd2_project4/dsd2_project4.srcs/sources_1/imports/new/global_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1707239404"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="micro_procHW"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/MemoryStageHW.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

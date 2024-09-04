@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 24 17:24:55 2024
+# Process ID: 37320
+# Current directory: C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.runs/synth_1
+# Command line: vivado.exe -log micro_procHW.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_procHW.tcl
+# Log file: C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.runs/synth_1/micro_procHW.vds
+# Journal file: C:/Users/Jean-Charles Mve/Documents/DSD2 Hw/DSD2_Project6/DSD2_Project6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source micro_procHW.tcl -notrace
